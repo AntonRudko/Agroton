@@ -4,8 +4,214 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Agroton</title>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/> -->
 		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/new_reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body></body>
+	<body>
+		<header class="header">
+			<div class="container header__inner">
+				<a href="#" class="logo">
+					<img src="./images/header/logo.svg" alt="logo" />
+				</a>
+				<nav class="menu">
+					<ul class="menu--list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">About company</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Products</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Partners</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="header__contacts">Contact us</a>
+			</div>
+		</header>
+		<main class="main">
+			<section class="about">
+				<div class="container-big">
+					<div class="about__top">
+						<h1 class="about__title">Agroton</h1>
+						<p class="about__text">
+							one of the largest producers of agricultural products in Ukraine
+						</p>
+					</div>
+				</div>
+				<!--маленький котейнер-->
+				<div class="container">
+					<!--2 ссилки-->
+					<div class="about__achievements">
+						<a href="#" class="about__achievement">
+							<img
+								src="./images/about/achievement1.png"
+								alt="achievement"
+								class="about__achievements-img"
+							/>
+							<button class="about__achievements-btn">
+								<img
+									src="./images/about/arrow.svg"
+									alt="arrow"
+									class="about__arrow"
+								/>
+							</button>
+							<div class="about__achievement-content">
+								<h4 class="about__achievement-title">
+									Agroton is among the leaders in wheat production in Ukraine
+								</h4>
+								<p class="about__achievement-text">
+									We rank <span class="highlight">4th in Ukraine</span> in terms
+									of wheat production, ensuring high quality grain thanks to
+									modern technologies and fertile Ukrainian fields.
+								</p>
+							</div>
+						</a>
+						<a href="#" class="about__achievement">
+							<img
+								src="./images/about/achievement2.png"
+								alt="achievement"
+								class="about__achievements-img"
+							/>
+							<button class="about__achievements-btn">
+								<img
+									src="./images/about/arrow.svg"
+									alt="arrow"
+									class="about__arrow"
+								/>
+							</button>
+							<div class="about__achievement-content">
+								<h4 class="about__achievement-title">
+									Agroton – number 1 in chicken production in Ukraine
+								</h4>
+								<p class="about__achievement-text">
+									We lead the chicken market in Ukraine, guaranteeing the
+									highest quality products thanks to modern technologies, safety
+									controls
+								</p>
+							</div>
+						</a>
+					</div>
+					<!-- div зі статистикою -->
+					<div class="about__statistic">
+						<dl class="stats">
+							<div class="stats__item">
+								<dd class="stats__value">100%</dd>
+								<dt class="stats__desc">
+									quality of <br />
+									production
+								</dt>
+							</div>
+							<div class="stats__item">
+								<dd class="stats__value">50+</dd>
+								<dt class="stats__desc">modern agricultural technologies</dt>
+							</div>
+							<div class="stats__item">
+								<dd class="stats__value">1.5 mil. tons</dd>
+								<dt class="stats__desc">products we produce every year.</dt>
+							</div>
+							<div class="stats__item">
+								<dd class="stats__value">10+ countries</dd>
+								<dt class="stats__desc">
+									we export products all over the world.
+								</dt>
+							</div>
+						</dl>
+					</div>
+					<!-- блок з таблицею -->
+					<p class="about__progres--text">
+						<span class="progres--highlight"
+							>Agroton is the largest diversified vertically</span
+						>
+						integrated agricultural producer in Eastern Ukraine. Agroton is a
+						regional leader in the cultivation of agricultural crops, livestock
+						farming
+					</p>
+					<div class="progres--blog">
+						<img src="./images/about/field.png" alt="field" />
+						<div class="about__progress">
+							<p class="progress--text">
+								Agroton is <span class="highlight">30 years </span>of leadership
+								in the agricultural sector. We cultivate
+								<span class="highlight">200,000+ hectares of land</span>, supply
+								the market with quality products and export
+								<span class="highlight">to 10+ countries.</span>
+								<span class="text--bold">Our mission</span> is to develop
+								agriculture, introduce innovations and provide people with
+								natural products.
+							</p>
+							<dl class="about__progres--table">
+								<div class="progres--table__item">
+									<dt>
+										<span class="highlight">№1</span> in sunflower production in
+										Ukraine
+									</dt>
+									<dd>48,000 hectares of sown areas.</dd>
+								</div>
+								<div class="progres--table__item">
+									<dt><span class="highlight">№4</span> in wheat production</dt>
+									<dd>50,000 hectares of fields.</dd>
+								</div>
+								<div class="progres--table__item">
+									<dt>
+										<span class="highlight">№1</span> in grain elevator capacity
+										in Luhansk region
+									</dt>
+									<dd>235,000 tons of storage.</dd>
+								</div>
+								<div class="progres--table__item">
+									<dt>
+										<span class="highlight">№1</span> in poultry production in
+										Luhansk region
+									</dt>
+									<dd>4,000,000 chickens.</dd>
+								</div>
+								<div class="progres--table__item">
+									<dt>
+										<span class="highlight">№5</span> in milk production in
+										Ukraine
+									</dt>
+									<dd>4,500 dairy cattle.</dd>
+								</div>
+								<div class="progres--table__item">
+									<dt>
+										<span class="highlight">№2</span> in bakery production in
+										Luhansk
+									</dt>
+									<dd>7,000 tons of products per year.</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="container-big">
+					<div class="products__wrapper">
+						<div class="container">
+							<div class="products__inner">
+								<h2 class="products__title">
+									High quality agricultural products
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/main.js"></script>
+	</body>
 </html>
