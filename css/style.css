@@ -304,3 +304,28 @@ button {
 .product__item:nth-child(6) {
 	background-image: url('../images/products_section/Vegetables.jpg');
 }
+/* agroton */
+
+.agroton__credo {
+	padding-top: 115px;
+	font-family: 'WorkSans-Medium';
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+.agroton__title {
+	text-align: center;
+	color: #f2a531;
+	font-family: 'WorkSans-SemiBold';
+	font-size: 200px;
+	text-transform: uppercase;
+}
+.agroton__wrapper {
+	position: relative;
+	margin-bottom: 140px;
+}
+.agroton--img {
+	position: absolute;
+	bottom: -155px;
+}
