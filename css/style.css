@@ -306,6 +306,11 @@ button {
 }
 /* agroton */
 
+.agroton {
+	/* overflow: hidden; */
+	/* max-height: 1000px; */
+	margin-bottom: 140px;
+}
 .agroton__credo {
 	padding-top: 115px;
 	font-family: 'WorkSans-Medium';
@@ -322,10 +327,11 @@ button {
 	text-transform: uppercase;
 }
 .agroton__wrapper {
-	position: relative;
-	margin-bottom: 140px;
+	/* position: relative; */
 }
 .agroton--img {
-	position: absolute;
-	bottom: -155px;
+	/* position: absolute; */
+	margin-top: -140px;
+
+	/* bottom: -155px; */
 }
