@@ -238,11 +238,9 @@ button {
 	margin-bottom: 40px;
 }
 
-.products__link {
-	display: block;
+.button {
 	color: #fff;
 	max-width: 242px;
-	margin: 0 auto;
 	text-transform: uppercase;
 	background-color: #000;
 	padding: 5px;
@@ -252,10 +250,16 @@ button {
 	justify-content: space-between;
 	align-items: center;
 }
-.products__link span {
+
+.button span {
 	flex: 1;
 	text-align: center;
 }
+.products__link {
+	/* display: block; */
+	margin: 0 auto;
+}
+
 .products__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -309,7 +313,7 @@ button {
 .agroton {
 	/* overflow: hidden; */
 	/* max-height: 1000px; */
-	margin-bottom: 140px;
+	margin-bottom: 130px;
 }
 .agroton__credo {
 	padding-top: 115px;
@@ -334,4 +338,86 @@ button {
 	margin-top: -140px;
 
 	/* bottom: -155px; */
+}
+.product__item:nth-child(odd) .product__item--title {
+	color: #fff;
+}
+
+/* supplies */
+.supplies {
+	margin-bottom: 150px;
+}
+.supplies__inner {
+	display: flex;
+	justify-content: space-between;
+	gap: 0 100px;
+}
+.supplies__title {
+	font-family: 'WorkSans-Regular';
+	font-size: 40px;
+	font-weight: 400;
+}
+.supplies__info {
+	max-width: 580px;
+	display: flex;
+	flex-direction: column;
+}
+.supplies__text {
+	margin-top: auto;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.supplies__box--top {
+	background-color: #f4f4e7;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	gap: 0 19px;
+	margin-bottom: 15px;
+	position: relative;
+	/* align-items: end; */
+}
+.supplies__box--top::before {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	background-image: url('../images/supplies/agroton_logo.svg');
+	width: 63px;
+	height: 56px;
+}
+.supplies__box--list {
+	margin-top: auto;
+	padding-bottom: 30px;
+
+	padding-left: 24px;
+}
+.supplies__box--item + .supplies__box--item {
+	margin-top: 15px;
+}
+.supplies__box--item {
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 39px;
+	position: relative;
+}
+.supplies__box--item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	background-image: url('../images/supplies/arrow.svg');
+	width: 24px;
+	height: 24px;
+	/* центруваня стрілок */
+	top: 50%;
+	transform: translateY(-50%);
+}
+.supplies__box--text {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 30px 80px 30px 30px;
+	background-color: #0d1615;
+	border-radius: 10px;
 }
