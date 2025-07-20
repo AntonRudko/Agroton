@@ -491,3 +491,37 @@ button {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+/* footer */
+
+.footer {
+	background-color: #0e0d0d;
+	padding: 100px 0;
+	color: #fff;
+}
+
+.footer__bottom {
+	border-top: 1px solid #fff;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	font-size: 14px;
+}
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	padding-right: 115px;
+}
+.footer__element--title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.footer__item + .footer__item {
+	padding-top: 15px;
+}
+.footer__address {
+	/* прибирає наклонений текст */
+	font-style: normal;
+}
