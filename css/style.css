@@ -532,6 +532,10 @@ button {
 	.progres--blog {
 		gap: 0 20px;
 	}
+	/* agroton */
+	.agroton--img {
+		margin-top: -110px;
+	}
 }
 @media (max-width: 980px) {
 	.about__title {
@@ -556,6 +560,16 @@ button {
 	.progres--table__item {
 		gap: 0 20px;
 	}
+	/* agroton */
+	.agroton__title {
+		font-size: 150px;
+	}
+	.agroton--img {
+		margin-top: -95px;
+	}
+	.agroton__credo {
+		font-size: 22px;
+	}
 }
 @media (max-width: 870px) {
 	.container {
@@ -579,6 +593,17 @@ button {
 	/* products */
 	.products__list {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	/* agroton */
+	.agroton__title {
+		font-size: 80px;
+	}
+	.agroton--img {
+		margin-top: -54px;
+	}
+	.agroton__credo {
+		font-size: 18px;
+		padding-top: 80px;
 	}
 }
 @media (max-width: 678px) {
@@ -644,7 +669,17 @@ button {
 	.product__item {
 		font-size: 24px;
 	}
-
+	/* agroton */
+	.agroton__title {
+		font-size: 50px;
+	}
+	.agroton--img {
+		margin-top: -34px;
+	}
+	.agroton__credo {
+		font-size: 16px;
+		padding-top: 30px;
+	}
 }
 
 @media (max-width: ) {
