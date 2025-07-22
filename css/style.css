@@ -391,7 +391,6 @@ button {
 .supplies__box--list {
 	margin-top: auto;
 	padding-bottom: 30px;
-
 	padding-left: 24px;
 }
 .supplies__box--item + .supplies__box--item {
@@ -444,8 +443,11 @@ button {
 .blog__items {
 	display: grid;
 	grid-template-columns: 580px auto;
-	grid-template-rows: 1fr 1fr;
+	/* /* grid-template-rows: 1fr 1fr; */
+	grid-template-rows: auto auto;
+
 	gap: 32px 44px;
+	/* grid-auto-rows: min-content; */
 }
 .blog__item-big {
 	grid-row: 1 / -1;
@@ -468,13 +470,15 @@ button {
 	margin-bottom: 12px;
 	display: block;
 	position: relative;
+	padding-right: 30px;
 }
 .blog__item--text {
 	color: #667085;
 }
 .blog__item-small {
 	display: flex;
-	align-items: center;
+
+	align-items: flex-start;
 	gap: 0 24px;
 }
 .blog__item--title::after {
@@ -521,6 +525,15 @@ button {
 	/* прибирає наклонений текст */
 	font-style: normal;
 }
+@media (max-width: 1330px) {
+	.supplies__info {
+		max-width: 500px;
+	}
+
+	.supplies__inner {
+		gap: 0 50px;
+	}
+}
 
 @media (max-width: 1280px) {
 	.about__title {
@@ -535,6 +548,32 @@ button {
 	/* agroton */
 	.agroton--img {
 		margin-top: -110px;
+	}
+	/* supplies */
+	.blog__item--title {
+	}
+	.blog__items {
+		gap: 20px;
+		grid-template-columns: 380px auto;
+	}
+	.supplies__info {
+		max-width: 350px;
+	}
+}
+@media (max-width: 1149px) {
+	.blog__wrapper {
+		padding: 50px 20px;
+	}
+	.blog__item--title {
+		font-size: 24px;
+	}
+}
+@media (max-width: 1049px) {
+	.supplies__box--top::before {
+		display: none;
+	}
+	.supplies__box--list {
+		margin-top: 20px;
 	}
 }
 @media (max-width: 980px) {
@@ -569,6 +608,31 @@ button {
 	}
 	.agroton__credo {
 		font-size: 22px;
+	}
+	.blog__items {
+		grid-template-columns: 1fr;
+	}
+	.blog__item--title {
+		max-width: 500px;
+	}
+	.blog__item-img {
+		width: 100%;
+	}
+	.supplies__box--top::before {
+		display: block;
+	}
+	.supplies__box--list {
+		margin-top: auto;
+	}
+	.supplies__inner {
+		flex-wrap: wrap;
+		gap: 20px 50px;
+	}
+	.supplies__info {
+		max-width: 100%;
+	}
+	.supplies__box {
+		width: 100%;
 	}
 }
 @media (max-width: 870px) {
@@ -609,6 +673,22 @@ button {
 @media (max-width: 678px) {
 	.stats__item {
 		flex: 1 1 100%;
+	}
+	.blog__item-small {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.supplies__box--text {
+		padding: 20px;
+	}
+	.supplies__box--top {
+		flex-wrap: wrap-reverse;
+	}
+	.agroton__field {
+		width: 100%;
+	}
+	.supplies__box--list {
+		margin-top: 20px;
 	}
 }
 @media (max-width: 510px) {
@@ -679,6 +759,22 @@ button {
 	.agroton__credo {
 		font-size: 16px;
 		padding-top: 30px;
+	}
+	.supplies__title {
+		font-size: 34px;
+		margin-bottom: 15px;
+	}
+	.supplies__text {
+		font-size: 16px;
+	}
+	.supplies {
+		margin-bottom: 50px;
+	}
+	.blog__title {
+		font-size: 30px;
+	}
+	.supplies__box--list {
+		padding-left: 0;
 	}
 }
 
